@@ -11,13 +11,11 @@ public class calculator {
             number res = new number();
             number option = new number();
 
-            String menu = "Calculadora\n\n" +
+            String menu = "\n\nCalculadora\n\n" +
                     "1-Somar\n" +
                     "2-Subtrair\n" +
                     "3-Multiplicar\n" +
                     "4-Dividir\n\n";
-
-            String operation = "";
 
             String proceed = "Y";
 
@@ -35,30 +33,24 @@ public class calculator {
                 switch (option.getValue()) {
                     case 1:
                         res.setValue(op.sum(n1.getValue(), n2.getValue()));
-                        operation = "soma";
                         break;
                     case 2:
                         res.setValue(op.sub(n1.getValue(), n2.getValue()));
-                        operation = "subtração";
                         break;
                     case 3:
                         res.setValue(op.mul(n1.getValue(), n2.getValue()));
-                        operation = "multiplicação";
                         break;
                     case 4:
                         res.setValue(op.div(n1.getValue(), n2.getValue()));
-                        operation = "divisão";
                         break;
                     default:
                         break;
                 }
 
-                System.out.printf("\nA %s de %d com %d é: %d", operation, n1.getValue(), n2.getValue(), res.getValue());
+                System.out.printf("\n%d\n", res.getValue());
 
                 System.out.printf("\nDeseja realizar outra operação? Y(es)/N(o)\n");
                 proceed = scan.next();
-
-                System.out.printf("\n");
             }
         }
     }
