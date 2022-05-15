@@ -2,13 +2,12 @@
 
 ➕ Uma calculadora que executa as quatro operações básicas.
 
-Esse projeto foi desenvolvido para a disciplina de Arquitetura de Software utilizando a linguagem Java com o objetivo de revisar os conceitos de Programação Orientada a Objetos.
+Esse projeto foi desenvolvido para a disciplina de Arquitetura de Software utilizando a linguagem Java.
 
 ## Como funciona?
 
-- Essa calculadora funciona via terminal.
-- Para executar o projeto basta rodar a classe principal chamada ``calculator.java``.
+- Para compilar o projeto: ``javac App.java``
 
-## Exemplo de funcionamento
+- Para executar o projeto: ``java App <expressão>``
 
-![Um print do terminal com a aplicação funcionando.](example.png)
+- Exemplo: ``java App 10 / 2``
